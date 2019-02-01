@@ -7,8 +7,10 @@ from Tkinter import *
 import tkMessageBox as box
 #esta libreria viene por defecto, en caso de que no instalar "sudo apt-get install requests"
 import requests
+
+#---------------********************************---------------
+
 #Esta variable tendra la direccion a donde haremos la peciciones
-# http://laboratorioredesneuronales.herokuapp.com/api/
 Api_url = 'http://laboratorioredesneuronales.herokuapp.com/api/'
 
 
@@ -60,5 +62,9 @@ frame.pack(padx=130,pady = 19)
 window.mainloop()
 
 print Api_url
+#---------------********************************---------------
+
+#Desde aca en adelante viene la logica para enviar las imagenes
+#Este es un ejemplo de como se debe hacer
 #files = {'imagen': open('img.jpg', 'rb')}
 #requests.post(Api_url, files=files)
